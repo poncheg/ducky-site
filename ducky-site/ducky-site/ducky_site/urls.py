@@ -6,6 +6,7 @@ from django.conf.urls import include, url
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
+from ducky_site import django_rocket
 # admin.autodiscover()
 
 urlpatterns = [
@@ -18,5 +19,5 @@ urlpatterns = [
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include('django_rocket.urls')),
+    url(r'^', include('django_rocket.urls', namespace="django_rocket")),
 ]
