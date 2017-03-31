@@ -1,0 +1,11 @@
+patterns
+RequestAccessView
+unicode_literals
+admin
+urlpatterns
+RequestAccessCompletedView
+url
+InvitationCompletedView
+RedeemInvitationView
+InvitationView
+include
